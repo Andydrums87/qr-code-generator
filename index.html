@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js" integrity="sha512-ZDSPMa/JM1D+7kdg2x3BsruQ6T/JpJo3jWDWkCZsP+5yVyp1KfESqLI+7RqB5k24F7p2cV7i2YHh/890y6P6Sw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js" integrity="sha512-csNcFYJniKjJxRWRV1R7fvnXrycHP6qDR21mgz1ZP55xY5d+aHLfo9/FcGDQLfn2IfngbAHd8LdfsagcCqgTcQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Document</title>
+</head>
+<body>
+  <nav class="nav"><img src="./logo-qr-generator.svg" alt="" width="130px"></nav>  
+<div class="container">    
+    <div class="input-container">
+        <div class="img-container"> <img src="./logo-qr-generator.svg" alt="" id="titleImg"></div>
+        <input id="user-input" type="text" placeholder="Enter a url">
+        <button id="btn">QR code</button>
+    </div>
+
+   
+    <div class="qr-container">
+        <div class=circle>
+            <div class="qr-result" id="qr-output">
+                <img src="" alt="" id="image">
+            </div>
+        </div>
+        
+        <div class="button-container">
+            <button id="download">
+                Download
+            </button>
+            <a href="https://twitter.com/share?url=<URL>&text=<TEXT>via=<USERNAME>"><button class="share-icon" id="share">Share</button></a>
+        </div>
+    </div>
+</div>
+
+     <script src="./app.js"></script>
+</body>
+</html>

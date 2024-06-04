@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./bg-illustration.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: #111729;
+    font-family: 'Outfit', sans-serif;
+    max-height:100vh;
+    position:relative
+}
+
+.nav {
+    display:none;
+}
+
+.nav.active {
+    display:block;
+    padding:2rem;
+    
+    
+}
+
+.container {
+    
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+}
+
+#titleImg {
+    
+    height:40px;
+    margin-bottom: 30px;
+}
+
+.input-container {
+    position:relative;
+    
+}
+
+.input-container.none{
+    display:none;
+}
+
+input {
+    border-radius: 15px;
+    width:600px;
+    padding:22px;
+    background-color: black;
+    border: 2px solid #3662E3;
+    font-size: 0.875rem;
+    color: #4e80ee33;
+    font-weight: 300;  
+}
+
+input, select, textarea{
+    color: #F2F5F9;
+}
+
+
+button {
+     background-color: 
+    #3662E3;
+    border-radius: 10px;
+    padding: 15px 30px;
+    color: #F2F5F9;
+    
+    cursor: pointer;
+    font-size: 1rem;
+    border: none;
+    text-align: center;
+    
+}
+
+#btn {
+    width:130px;
+    position: absolute;
+    right:8px;
+    top:79px;
+    font-size:0.875rem;
+
+    
+}
+
+.circle {
+    width:307px;
+    height:307px;
+    border-radius: 50%;
+    background-color:#4e80ee33;
+    position:relative;
+    top:-70px;
+    
+}
+
+.qr-container {
+    position: relative;
+    display:none;
+  
+}
+
+.qr-container.active {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+
+
+.qr-result img {
+    width: 250px;
+    height: auto;
+    border-radius: 20px;
+    animation: fadeIn 0.5s ease-in;
+    border:30px solid white;
+    position:absolute;
+    top:32px;
+    left:32px;
+    
+}
+
+.button-container {
+    max-width:350px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+}
+
+#download {
+    width:200px;
+    border-radius: 10px;
+    font-size:0.875rem;
+    
+}
+
+#download::after {
+    content: '\f0ab';
+    font-family: FontAwesome;
+    margin-left:1rem;
+}
+
+
+#share {
+    width:150px;
+    border-radius: 10px;;
+    font-size:0.875rem;
+}
+
+#share::after {
+    content: '\f0c6';
+    font-family: FontAwesome;
+    margin-left:2rem;
+}
+
+
+
+@media (max-width: 640px) {
+    
+    input {
+        margin-left: 5px;;
+        max-width: 380px;
+    }
+
+    .button-container {
+        max-width:200px;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #share {
+        width:200px;
+    }
+}
+
+
+
+
+
